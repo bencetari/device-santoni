@@ -1,8 +1,8 @@
-# Pixel Experience
+# Exthmui
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/aosp_santoni.mk
+    $(LOCAL_DIR)/exthm_santoni.mk
 
 COMMON_LUNCH_CHOICES += \
-    aosp_santoni-userdebug \
-    aosp_santoni-user \
-    aosp_santoni-eng
+    exthm_santoni-userdebug \
+    exthm_santoni-user \
+    exthm_santoni-eng
