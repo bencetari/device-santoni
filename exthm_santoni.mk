@@ -2,6 +2,9 @@
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 $(call inherit-product, vendor/exthm/config/common_full_phone.mk)
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+
 # ROM spesific makefile name
 PRODUCT_NAME := exthm_santoni
 PRODUCT_DEVICE := santoni
