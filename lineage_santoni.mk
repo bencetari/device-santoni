@@ -35,7 +35,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Maintainer
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cipher.maintainer=Faisalhossainerfan
+    ro.cipher.maintainer=iamnabilzaman
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
