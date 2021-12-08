@@ -1,8 +1,8 @@
-# CipherOS
-PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/lineage_santoni.mk
+# YaapOS
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/yaap_santoni.mk
 
-COMMON_LUNCH_CHOICES += \
-    lineage_santoni-userdebug \
-    lineage_santoni-user \
-    lineage_santoni-eng
+COMMON_LUNCH_CHOICES := \
+    yaap_santoni-userdebug \
+    yaap_santoni-user \
+    yaap_santoni-eng
