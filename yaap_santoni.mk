@@ -1,15 +1,11 @@
-# Inherit makefiles
-$(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
+
+# Inherit from santoni device
+$(call inherit-product, device/xiaomi/santoni/device.mk)
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
-
-# ROM spesific makefile name
-PRODUCT_NAME := yaap_santoni
-
-# Gapps
-TARGET_USE_GAPPS := false
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-
 
 # ROM spesific makefile name
 PRODUCT_NAME := yaap_santoni
