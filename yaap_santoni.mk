@@ -12,7 +12,7 @@ IS_PHONE := true
 
 
 # ROM spesific makefile name
-PRODUCT_NAME := lineage_santoni
+PRODUCT_NAME := yaap_santoni
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
