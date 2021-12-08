@@ -1,21 +1,15 @@
 # Inherit makefiles
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+# ROM spesific makefile name
+PRODUCT_NAME := yaap_santoni
 
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8937
+# Gapps
+TARGET_USE_GAPPS := false
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # ROM spesific makefile name
 PRODUCT_NAME := lineage_santoni
@@ -25,17 +19,6 @@ PRODUCT_MODEL := Redmi 4X
 BOARD_VENDOR := Xiaomi
 TARGET_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
-# CipherOS Stuff
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Maintainer
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cipher.maintainer=iamnabilzaman
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
